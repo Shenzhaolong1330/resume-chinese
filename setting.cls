@@ -1,6 +1,6 @@
 %%%% 参考了https://www.wondercv.com/的模板
 \ProvidesClass{setting}
-\LoadClass[11pt]{article}
+\LoadClass[10pt]{article}
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -14,9 +14,9 @@
 \usepackage{url}
 \hypersetup{
     colorlinks=true,
-    linkcolor=cyan,
-    urlcolor=cyan,
-    citecolor=cyan,
+    linkcolor=ICBlue,
+    urlcolor=ICBlue,
+    citecolor=ICBlue,
 }
 
 \urlstyle{tt}
@@ -69,8 +69,8 @@ BoldFont=Pro_GB18030DemiBold.ttf,
 	a4paper,
 	left=1.2cm,
 	right=1.2cm,
-	top=1.5cm,
-	bottom=1cm,
+	top=0.5cm,
+	bottom=0.5cm,
 	nohead
 ]{geometry}
 \renewcommand{\baselinestretch}{1.2} %定义行间距1.2

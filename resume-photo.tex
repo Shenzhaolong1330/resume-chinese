@@ -1,20 +1,25 @@
 \documentclass{setting}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay]
-  \node[anchor = north east] at ($(current page.north east)+(-1.5cm,-1cm)$) {\includegraphics[height=3.5cm]{avatar}};
+  \node[anchor = north east] at ($(current page.north east)+(-1.4cm,-0.25cm)$) {\includegraphics[height=2.8cm]{avatar_blue.jpg}};
 \end{tikzpicture}%
 %%%% 利用tikz来定位学校Logo，这部分没有遵守College logo positioning
-\begin{tikzpicture}[remember picture, overlay]
-  \node[anchor = north west] at ($(current page.north west)+(0.45cm, -0.45cm)$) {\includegraphics[width=7cm]{imperial.png}};
-\end{tikzpicture}
+% \begin{tikzpicture}[remember picture, overlay]
+%   \node[anchor = north west] at ($(current page.north west)+(0.3cm, -0.1cm)$) {\includegraphics[width=5cm]{buaa_zgca.png}};
+% \end{tikzpicture}
 
-\name{Dr. Jekyll}
-\basicContactInfo{13xxx-xxx-xxx}{zheyu.ye18@alumni.imperial.ac.uk}
+
+\name{沈 照龙}
+\basicContactInfo{15994076800}{shenzhaolong@buaa.edu.cn}
 
 \input{body}
+% \input{footer}
 
-\input{footer}
 \end{document}
